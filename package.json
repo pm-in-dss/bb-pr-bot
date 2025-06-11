@@ -1,0 +1,18 @@
+{
+  "name": "bb-pr-bot",
+  "version": "1.0.0",
+  "description": "create & merge PR",
+  "bin": {
+    "bb-pr-bot": "index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pm-in-dss/bb-pr-bot"
+  },
+  "keywords": [
+    "bitbucket",
+    "pr"
+  ],
+  "author": "Pomba Magar <pombam@highground.life>",
+  "license": "Apache-2.0"
+}
