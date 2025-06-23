@@ -35,11 +35,12 @@ async function doFetch(path, body) {
 			body: JSON.stringify(body)
 		});
 
+		const ret = await response.json();
+
 		if (!response.ok) {
+			log(ret, 'error')
 			throw new Error(response.statusText);
 		}
-
-		const ret = await response.json();
 
 		log("Request successful")
 
