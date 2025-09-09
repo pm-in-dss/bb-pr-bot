@@ -10,7 +10,7 @@ const {
 } = process.env
 
 function log(message, level = "info") {
-	console[level]("[bb-pr-bot] " + message)
+	console[level]("[bb-pr-bot] ", message)
 }
 
 if (!BITBUCKET_REPO_SLUG || !BITBUCKET_WORKSPACE || !PR_BOT_TOKEN) {
